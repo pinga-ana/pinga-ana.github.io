@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pinga Anã</title>
+  <meta name="description" content="Pinga Anã — demo em navegador (pygbag) e mundo em mapa." />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0c0c0f;
+      --fg: #f4efe6;
+      --muted: #a39e94;
+      --accent: #c9a227;
+      --card: #16161c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, "Segoe UI", Roboto, Ubuntu, sans-serif;
+      background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a1520 0%, var(--bg) 55%);
+      color: var(--fg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.25rem 3rem;
+      text-align: center;
+    }
+    main {
+      max-width: 42rem;
+      width: 100%;
+    }
+    .hero {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    h1 {
+      font-size: clamp(1.35rem, 4vw, 1.75rem);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin: 1.75rem 0 0.5rem;
+    }
+    p.lead {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0 0 1.75rem;
+      font-size: 1rem;
+    }
+    a.play {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #8b6914);
+      color: #1a1204;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 20px rgba(201, 162, 39, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    a.play:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(201, 162, 39, 0.45);
+    }
+    a.play:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img
+      class="hero"
+      src="assets/hero.png"
+      alt="Logótipo Pinga Anã: título dourado, dados de RPG, mapa antigo e personagens de fantasia numa banda."
+    />
+    <h1>Pinga Anã</h1>
+    <p class="lead">
+      Demo web (pygbag / pygame). Abre o jogo no caminho dedicado do site.
+    </p>
+    <a class="play" href="/pinga-ana-adventure-demo/">Abrir o jogo</a>
+    <footer>
+      <a href="https://github.com/pinga-ana">Organização GitHub pinga-ana</a>
+    </footer>
+  </main>
+</body>
+</html>
