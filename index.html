@@ -29,10 +29,7 @@
       font-family: system-ui, "Segoe UI", Roboto, Ubuntu, sans-serif;
       background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a1520 0%, var(--bg) 55%);
       color: var(--fg);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1.25rem 3rem;
+      padding: 0 0 3rem;
       text-align: center;
     }
     main {
@@ -177,9 +174,19 @@
       color: var(--accent);
     }
   </style>
+  <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
-  <main>
+  <header class="site-header">
+    <a class="site-logo" href="/">Pinga <span>Anã</span></a>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="/" aria-current="page">Início</a>
+      <a href="quem-somos.html">Quem somos</a>
+      <a href="musicas.html">Músicas</a>
+      <a href="/pinga-ana-adventure-demo/">Jogo demo</a>
+    </nav>
+  </header>
+  <main class="page-wrap" style="max-width: 44rem; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; padding-top: 1rem;">
     <img
       class="hero"
       src="assets/hero.png"
@@ -194,7 +201,9 @@
       Perfect blend of folk metal, hardcore, and nonsense humor — the craziest crew of the seven seas.
     </p>
     <div class="actions">
-      <a class="play" href="/pinga-ana-adventure-demo/">Abrir o jogo (demo web)</a>
+      <a class="play" href="quem-somos.html">Quem somos — a saga da tripulação</a>
+      <a class="play" href="musicas.html" style="background: transparent; color: var(--fg); border: 1px solid rgba(201, 162, 39, 0.45); box-shadow: none;">Nossas músicas</a>
+      <a class="play" href="/pinga-ana-adventure-demo/" style="background: rgba(201, 162, 39, 0.15); color: var(--fg); box-shadow: none;">Abrir o jogo (demo web)</a>
     </div>
     <section class="social-block" aria-labelledby="redes-heading">
       <h2 id="redes-heading">Redes e música</h2>
