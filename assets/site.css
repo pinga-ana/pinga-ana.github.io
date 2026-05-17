@@ -334,3 +334,216 @@ body:has(.site-header) {
   color: var(--muted);
   border-top: 1px solid var(--card-border);
 }
+
+/* Rider técnico */
+.page-wrap--wide { max-width: 58rem; }
+
+.rider-meta {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1.35rem 1.5rem;
+  border-radius: 14px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+}
+
+@media (min-width: 560px) {
+  .rider-meta { grid-template-columns: repeat(2, 1fr); }
+}
+
+.rider-meta dt {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.2rem;
+}
+
+.rider-meta dd {
+  margin: 0;
+  color: var(--fg);
+  font-size: 0.95rem;
+}
+
+.rider-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.rider-toc a {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--muted);
+  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.03);
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.rider-toc a:hover {
+  color: var(--fg);
+  border-color: rgba(201, 162, 39, 0.4);
+  background: rgba(201, 162, 39, 0.1);
+}
+
+.rider-section {
+  margin-bottom: 2.75rem;
+  scroll-margin-top: 5rem;
+}
+
+.rider-section h2 {
+  font-size: clamp(1.2rem, 3vw, 1.45rem);
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--card-border);
+  color: var(--fg);
+}
+
+.rider-section h3 {
+  font-size: 1rem;
+  margin: 1.25rem 0 0.5rem;
+  color: var(--accent);
+}
+
+.rider-section p,
+.rider-section li {
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.rider-section ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.rider-section li { margin-bottom: 0.4rem; }
+
+.rider-section li strong { color: var(--fg); }
+
+.rider-note {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  background: rgba(201, 162, 39, 0.08);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  color: var(--muted);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+}
+
+.rider-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  min-width: 36rem;
+}
+
+.rider-table th,
+.rider-table td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.rider-table th {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.rider-table tbody tr:last-child td { border-bottom: none; }
+
+.rider-table td:first-child {
+  font-weight: 600;
+  color: var(--fg);
+  white-space: nowrap;
+}
+
+.stage-plot {
+  margin: 1.25rem 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  background: #fff;
+}
+
+.stage-plot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.stage-layout {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 520px) {
+  .stage-layout { grid-template-columns: repeat(2, 1fr); }
+}
+
+.stage-layout li {
+  list-style: none;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+}
+
+.stage-layout strong {
+  display: block;
+  color: var(--fg);
+  margin-bottom: 0.25rem;
+}
+
+.ref-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ref-list li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--card-border);
+  color: var(--muted);
+}
+
+.ref-list li:last-child { border-bottom: none; }
+
+.rider-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid rgba(201, 162, 39, 0.45);
+  box-shadow: none;
+}
+
+.btn--outline:hover {
+  background: rgba(201, 162, 39, 0.12);
+}
